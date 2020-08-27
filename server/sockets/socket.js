@@ -10,6 +10,7 @@ io.on('connection', (client) => {
   client.on('disconnect', () => {
     console.log('cliente disconnected')
   })
+  
   //Sigueitne ticket
   client.on('nextTicket', (ticket, callback) => {
     const next = ticketControl.nextTicket() 
