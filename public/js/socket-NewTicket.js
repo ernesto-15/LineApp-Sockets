@@ -15,6 +15,5 @@ socket.on('currentState', (ticket) => {
 button.addEventListener('click', () => {
   socket.emit('nextTicket', null, (ticket) => {
     label.textContent = ticket;
-    console.log(label.textContent);
   });
 });
